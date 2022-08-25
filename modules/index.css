@@ -77,7 +77,7 @@
     margin-left: calc(50vw - 92px);
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .logo_place_header {
     width: 100px;
     margin-left: calc(50vw - 50px);
@@ -140,6 +140,45 @@
   align-self: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .heading {
+    padding: 100px 34px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, -webkit-min-content);
+    grid-template-rows: repeat(5, min-content);
+    grid-template-areas: "span-top" "title" "span-bottom" "image" "button";
+  }
+  .heading__title {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+  }
+  .heading__image {
+    width: 100%;
+    margin: 70px 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .heading {
+    padding: 60px 20px;
+  }
+  .heading__span {
+    font-size: 11px;
+    line-height: 14px;
+    margin: 0;
+  }
+  .heading__title {
+    max-width: 280px;
+    font-size: 38px;
+    line-height: 50px;
+    margin: 26px auto 30px auto;
+  }
+  .heading__image {
+    margin: 60px 0;
+  }
+  .heading__button {
+    width: 100%;
+  }
+}
 .burger {
   width: 26px;
   height: 22px;
@@ -184,7 +223,7 @@
     display: block;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .burger {
     width: 20px;
     height: 18px;

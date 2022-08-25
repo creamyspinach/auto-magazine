@@ -17,7 +17,7 @@
     margin-left: calc(50vw - 92px);
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .logo_place_header {
     width: 100px;
     margin-left: calc(50vw - 50px);
