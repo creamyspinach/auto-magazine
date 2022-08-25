@@ -1,0 +1,60 @@
+.heading{
+    background-color: $bgColor;
+    color: $borderColor;
+    padding: 150px 0;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "span-top image"
+    "title image"
+    "span-bottom image"
+    "button image";
+    &__span{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        justify-self: center;
+    }
+    &__span_top{
+        grid-area: span-top;
+    }
+    &__span_bottom{
+        grid-area: span-bottom;
+    }
+    &__title{
+        grid-area: title;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 73px;
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+    &__button{
+        grid-area: button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 64px;
+        box-sizing: border-box;
+        border: 1px solid $borderColor;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        color: $borderColor;
+        transition: all 300ms ease;
+        margin-top: 30px;
+        justify-self: center;
+    }
+    &__button:hover{
+        background-color: $borderColor;
+        color: $bgColor;
+    }
+    &__image{
+        grid-area: image;
+        width: 50vw;
+        align-self: center;
+    }
+}

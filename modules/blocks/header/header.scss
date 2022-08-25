@@ -1,0 +1,51 @@
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: $bgColor;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid $borderColor;
+    &__nav{
+        margin-left: 50px;
+        display: flex;
+        gap: 20px;
+        animation: fade-in 300ms ease;
+    }
+    &__link{
+        text-decoration: none;
+        color: $borderColor;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        transition: all 200ms ease;
+    }
+    &__link:hover{
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header{
+        &__nav{
+            display: none;
+            margin-left: 34px;
+            gap: 16px;
+        }
+        &__nav_active{
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header{
+        &__nav{
+            margin-left: 20px;
+        }
+        &__link{
+            font-size: 11px;
+        }
+    }
+}

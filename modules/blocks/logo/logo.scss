@@ -1,0 +1,29 @@
+.logo{
+    width: 184px;
+    animation: fade-in 300ms ease;
+    &_place_header{
+        margin-left: auto;
+        margin-right: calc(50vw - 92px);
+    }
+    &_disabled{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo{
+        &_place_header{
+            margin-right: auto;
+            margin-left: calc(50vw - 92px);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo{
+        &_place_header{
+            width: 100px;
+            margin-left: calc(50vw - 50px);
+        }
+    }
+}
