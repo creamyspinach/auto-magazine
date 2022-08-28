@@ -1,2 +1,36 @@
+// colors
 $bgColor: #191D2C;
 $borderColor: #E1FD2C;
+
+//D = desktop T = tablet M = mobile - - DT = tablet & desktop
+
+//fonts
+$regularFontWeight: 400;
+$lightFontWeight: 300;
+
+$lineHeightEqualsFontSize: 100%;
+
+$h3FontSizeDT: 30px;
+$h3LineHeightDT: 37px;
+$h3FontSizeM: 22px;
+
+$paragraphFontSizeDT: 30px;
+$paragraphLineHeightDT: 42px;
+$paragraphFontSizeM: 16px;
+$paragraphLineHeightM: 27px;
+
+$aboutLsistFontSizeDT: 21px;
+$aboutListLineHeightDT: 32px;
+$aboutListFontSizeM: 16px;
+$aboutListLineHeightM: 20px;
+
+// margins, paddings and gaps
+
+$mainGap: 1px;
+
+$noMargin: 0;
+$noPadding: 0;
+
+$aboutContainerPaddingDT: 40px 50px 45px;
+$aboutContainerPaddingM: 20px; 
+$aboutContainerPaddingParagraphM: 18px 20px;

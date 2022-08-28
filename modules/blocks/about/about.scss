@@ -1,0 +1,80 @@
+.about{
+    background-color: $borderColor;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: $mainGap;
+    &__container{
+        padding: $aboutContainerPaddingDT;
+        background-color: $bgColor;
+    }
+    &__list-title{
+        text-transform: uppercase;
+        margin: $noMargin;
+        font-weight: $regularFontWeight;
+        font-size: $h3FontSizeDT;
+        line-height: $h3LineHeightDT;
+    }
+    &__list{
+        text-transform: capitalize;
+        box-sizing: border-box;
+        margin: 50px auto auto 0;
+        padding: 0 0 0 10px;
+        font-weight: $lightFontWeight;
+        font-size: $aboutLsistFontSizeDT;
+        line-height: $aboutListLineHeightDT;
+        &_plus{
+            list-style-type: "+";
+        }
+        &_minus{
+            list-style-type: "-";
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about{
+        grid-template-columns: auto;
+        grid-template-rows: min-content 506px;
+        grid-template-areas: 
+        "paragraph paragraph"
+        "left-list right-list";
+        &__container{
+            &_paragraph{
+                grid-area: paragraph;
+            }
+            &_left-list{
+                grid-area: left-list;
+            }
+            &_right-list{
+                grid-area: right-list;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .about{
+        grid-template-areas: 
+        "paragraph"
+        "left-list"
+        "right-list";
+        grid-template-rows: repeat(3, min-content);
+        &__container{
+            padding: $aboutContainerPaddingM;
+            &_paragraph{
+                padding: $aboutContainerPaddingParagraphM;
+            }
+        }
+        &__list-title{
+            font-size: $h3FontSizeM;
+            line-height: $lineHeightEqualsFontSize;
+        }
+        &__list{
+            margin: 40px auto 0 0;
+            padding: 0 0 0 8px;
+            font-size: $aboutListFontSizeM;
+            line-height: $aboutListLineHeightM;
+        }
+    }
+}

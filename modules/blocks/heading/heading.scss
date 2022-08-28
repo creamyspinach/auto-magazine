@@ -16,6 +16,7 @@
         line-height: 28px;
         margin-bottom: 30px;
         justify-self: center;
+        text-transform: uppercase;
     }
     &__span_top{
         grid-area: span-top;
@@ -32,6 +33,7 @@
         text-align: center;
     }
     &__button{
+        text-transform: uppercase;
         grid-area: button;
         display: flex;
         align-items: center;

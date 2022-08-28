@@ -1,8 +1,12 @@
+@import url(../vendor/fonts/SourceSansPro/SourceSansPro.css);
 @import url(../vendor/normalize.css);
 @import url(../modules/keyframes/keyframes.css);
 @import './variables/variables.scss';
 @import './blocks/page/page.scss';
+@import './blocks/content/content.scss';
 @import './blocks/header/header.scss';
 @import './blocks/logo/logo.scss';
 @import './blocks/heading/heading.scss';
 @import './blocks/burger/burger.scss';
+@import './blocks/about/about.scss';
+@import './blocks/paragraph/paragraph.scss';

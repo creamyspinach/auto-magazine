@@ -1,0 +1,18 @@
+.paragraph{
+    color: $borderColor;
+    font-weight: $lightFontWeight;
+    font-size: $paragraphFontSizeDT;
+    line-height: $paragraphLineHeightDT;
+    margin: $noMargin;
+    &_place_about::before{
+        font-weight: $regularFontWeight;
+        content: "VW T1 Electro:";
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .paragraph{
+        font-size: $paragraphFontSizeM;
+        line-height: $paragraphLineHeightM;
+    }
+}
