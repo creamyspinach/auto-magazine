@@ -3,8 +3,6 @@
 @import url(../modules/keyframes/keyframes.css);
 .page {
   font-family: "Source Sans Pro", sans-serif;
-  width: 100%;
-  height: 100%;
 }
 
 .content {
@@ -29,8 +27,8 @@
   margin-left: 50px;
   display: flex;
   gap: 20px;
-  -webkit-animation: fade-in 300ms ease;
-          animation: fade-in 300ms ease;
+  -webkit-animation: fade-in 400ms ease;
+          animation: fade-in 400ms ease;
 }
 .header__link {
   text-decoration: none;
@@ -201,7 +199,7 @@
   height: 2px;
   background-color: #E1FD2C;
   position: absolute;
-  transition: all 300ms ease;
+  transition: all 400ms ease;
 }
 .burger__line_top {
   top: 0;
@@ -217,7 +215,8 @@
   top: 10px;
 }
 .burger__line_middle_active {
-  display: none;
+  opacity: 0;
+  transform: rotate(90deg);
 }
 .burger__line_bottom_active {
   transform: rotate(135deg);

@@ -1,3 +1,4 @@
+
 // colors
 $bgColor: #191D2C;
 $borderColor: #E1FD2C;
@@ -5,6 +6,8 @@ $borderColor: #E1FD2C;
 //D = desktop T = tablet M = mobile - - DT = tablet & desktop
 
 //fonts
+$sourceSansPro: 'Source Sans Pro', sans-serif;
+
 $regularFontWeight: 400;
 $lightFontWeight: 300;
 
@@ -18,6 +21,10 @@ $paragraphFontSizeDT: 30px;
 $paragraphLineHeightDT: 42px;
 $paragraphFontSizeM: 16px;
 $paragraphLineHeightM: 27px;
+
+$headerLinkFontSizeDT: 12px;
+$headerLinkLineHeight: 16px;
+$headerLinkFontSizeM: 11px; 
 
 $aboutLsistFontSizeDT: 21px;
 $aboutListLineHeightDT: 32px;
@@ -34,3 +41,8 @@ $noPadding: 0;
 $aboutContainerPaddingDT: 40px 50px 45px;
 $aboutContainerPaddingM: 20px; 
 $aboutContainerPaddingParagraphM: 18px 20px;
+
+// animations
+$linkHoverTransition: all 200ms ease;
+$burgerTransition: all 400ms ease;
+$burgerHeaderAnimation: fade-in 400ms ease;

@@ -6,20 +6,20 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    border-bottom: 1px solid $borderColor;
+    border-bottom: $mainGap solid $borderColor;
     &__nav{
         margin-left: 50px;
         display: flex;
         gap: 20px;
-        animation: fade-in 300ms ease;
+        animation: $burgerHeaderAnimation;
     }
     &__link{
         text-decoration: none;
         color: $borderColor;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        transition: all 200ms ease;
+        font-weight: $regularFontWeight;
+        font-size: $headerLinkFontSizeDT;
+        line-height: $headerLinkLineHeight;
+        transition: $linkHoverTransition;
     }
     &__link:hover{
         opacity: 0.6;
@@ -45,7 +45,7 @@
             margin-left: 20px;
         }
         &__link{
-            font-size: 11px;
+            font-size: $headerLinkFontSizeM;
         }
     }
 }
