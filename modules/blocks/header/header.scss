@@ -22,7 +22,7 @@
         transition: $linkHoverTransition;
     }
     &__link:hover{
-        opacity: 0.6;
+        opacity: $hoverOpacity;
     }
 }
 

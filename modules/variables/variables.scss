@@ -13,6 +13,9 @@ $lightFontWeight: 300;
 
 $lineHeightEqualsFontSize: 100%;
 
+$H2FontSizeDT: 46px;
+$H2FontSizeM: 26px;
+
 $h3FontSizeDT: 30px;
 $h3LineHeightDT: 37px;
 $h3FontSizeM: 22px;
@@ -38,6 +41,9 @@ $mainGap: 1px;
 $noMargin: 0;
 $noPadding: 0;
 
+$commonMarginOrPaddingDT: 50px;
+$commonMarginOrPaddingM: 20px;
+
 $aboutContainerPaddingDT: 40px 50px 45px;
 $aboutContainerPaddingM: 20px; 
 $aboutContainerPaddingParagraphM: 18px 20px;
@@ -46,3 +52,6 @@ $aboutContainerPaddingParagraphM: 18px 20px;
 $linkHoverTransition: all 200ms ease;
 $burgerTransition: all 400ms ease;
 $burgerHeaderAnimation: fade-in 400ms ease;
+
+//other
+$hoverOpacity: 0.6;

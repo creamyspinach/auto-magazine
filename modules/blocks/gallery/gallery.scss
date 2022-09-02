@@ -1,0 +1,83 @@
+.gallery{
+    background-color: $borderColor;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $mainGap;
+    &__container{
+        background-color: $bgColor;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: 
+        "img img"
+        "title controls";
+        padding-bottom: $commonMarginOrPaddingDT;
+    }
+    &__img{
+        width: 100%;
+        margin-bottom: $commonMarginOrPaddingDT;
+        grid-area: img;
+    }
+    &__controls{
+        width: 114px;
+        display: flex;
+        justify-content: space-between;
+        grid-area: controls;
+        justify-self: end;
+        margin-right: $commonMarginOrPaddingDT;
+    }
+    &__control{
+        width: 42px;
+        height: 34px;
+        cursor: pointer;
+        background-image: url(../../../images/slider__arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: inherit;
+        border: 0;
+        transition: $linkHoverTransition;
+        &_right{
+            transform: rotate(180deg);
+        }
+    }
+    &__control:hover{
+        opacity: $hoverOpacity;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery{
+        grid-template-columns: auto;
+        &__container{
+            &_empty{
+                display: none;
+            }
+        }
+        &__img{
+            box-sizing: border-box;
+            padding: 0 34px;
+            margin-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gallery{
+        &__container{
+            padding: $commonMarginOrPaddingM;
+        }
+        &__img{
+            padding: $noPadding;
+            margin: 0 0 50px;
+        }
+        &__controls{
+            margin: $noMargin;
+            width: 64px;
+        }
+        &__control{
+            width: 24px;
+            height: 20px;
+            background-size: 24px;
+        }
+    }
+}
