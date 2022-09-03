@@ -7,6 +7,7 @@
     align-items: center;
     box-sizing: border-box;
     border-bottom: $mainGap solid $borderColor;
+    z-index: 1;
     &__nav{
         margin-left: 50px;
         display: flex;
