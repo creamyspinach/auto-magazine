@@ -326,10 +326,18 @@
   font-size: 30px;
   line-height: 42px;
   margin: 0;
+  display: inline;
 }
 .paragraph_place_about::before {
   font-weight: 400;
   content: "VW T1 Electro:";
+}
+.paragraph__span {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  display: inline;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 550px) {
@@ -446,4 +454,76 @@
     height: 20px;
     background-size: 24px;
   }
+}
+.press {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  background-color: #E1FD2C;
+  gap: 1px;
+}
+.press__container {
+  background-color: #191D2C;
+  padding: 50px;
+}
+.press__container_paragraph {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: "paragraph paragraph" "radio link";
+}
+.press__paragraph-container {
+  grid-area: paragraph;
+  -webkit-animation: fade-in 400ms ease;
+          animation: fade-in 400ms ease;
+}
+.press__radio-container {
+  display: flex;
+  grid-area: radio;
+  align-items: flex-end;
+}
+.press__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.press__pseudo-radio {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #E1FD2C;
+  border-radius: 999px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.press__radio-label {
+  display: inline;
+  margin-right: 14px;
+}
+.press__radio:checked + .press__pseudo-radio {
+  background-color: #E1FD2C;
+}
+.press__link {
+  grid-area: link;
+  justify-self: flex-end;
+  align-self: flex-end;
+  width: 110px;
+  height: 52px;
+  background-image: url(../../../images/press__link-ellipse.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E1FD2C;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+.press__link:hover {
+  background-image: url(../../../images/press__link-ellipse-hover.svg);
+  color: #191D2C;
 }/*# sourceMappingURL=index.css.map */
