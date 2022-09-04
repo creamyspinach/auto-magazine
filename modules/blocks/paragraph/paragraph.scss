@@ -22,5 +22,9 @@
     .paragraph{
         font-size: $paragraphFontSizeM;
         line-height: $paragraphLineHeightM;
+        &__span{
+            font-size: $paragraphFontSizeM;
+            line-height: $paragraphLineHeightM;
+        }
     }
 }

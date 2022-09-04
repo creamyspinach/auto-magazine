@@ -18,7 +18,6 @@
     }
     &__paragraph-container{
         grid-area: paragraph;
-        animation: $burgerHeaderAnimation;
     }
     &__radio-container{
         display: flex;
@@ -26,8 +25,6 @@
         align-items: flex-end;
     }
     &__radio{
-        // grid-area: radio;
-        // align-self: flex-end;
         position: absolute;
         width: 1px;
         height: 1px;
@@ -66,9 +63,35 @@
         color: $borderColor;
         text-decoration: none;
         transition: $linkHoverTransition;
+        font-weight: $regularFontWeight;
+        font-size: $pressLinkFontSizeDT;
+        line-height: $lineHeightEqualsFontSize;
     }
     &__link:hover{
         background-image: url(../../../images/press__link-ellipse-hover.svg);
         color: $bgColor;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .press{
+        grid-template-columns: auto;
+        grid-template-rows: 287px;
+        &__container_title{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .press{
+        &__container{
+            padding: $commonMarginOrPaddingM;
+        }
+        &__link{
+            width: 88px;
+            height: 42px;
+            background-size: 88px;
+            font-size: $pressLinkFontSizeM;
+        }
     }
 }

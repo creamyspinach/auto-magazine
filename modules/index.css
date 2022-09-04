@@ -345,6 +345,10 @@
     font-size: 16px;
     line-height: 27px;
   }
+  .paragraph__span {
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
 .section-title {
   font-weight: 400;
@@ -475,8 +479,6 @@
 }
 .press__paragraph-container {
   grid-area: paragraph;
-  -webkit-animation: fade-in 400ms ease;
-          animation: fade-in 400ms ease;
 }
 .press__radio-container {
   display: flex;
@@ -522,8 +524,32 @@
   color: #E1FD2C;
   text-decoration: none;
   transition: all 200ms ease;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 100%;
 }
 .press__link:hover {
   background-image: url(../../../images/press__link-ellipse-hover.svg);
   color: #191D2C;
+}
+
+@media screen and (max-width: 1000px) {
+  .press {
+    grid-template-columns: auto;
+    grid-template-rows: 287px;
+  }
+  .press__container_title {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .press__container {
+    padding: 20px;
+  }
+  .press__link {
+    width: 88px;
+    height: 42px;
+    background-size: 88px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=index.css.map */
