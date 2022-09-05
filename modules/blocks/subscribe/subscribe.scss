@@ -1,0 +1,82 @@
+.subscribe{
+    margin: 65px 0 0 0;
+    display: grid;
+    background-color: $borderColor;
+    padding: $mainGap;
+    gap: $mainGap;
+    grid-template-rows: 1fr 1fr;
+    width: 340px;
+    height: 64px;
+    border: 0;
+    box-sizing: border-box;
+    &__container{
+        padding: $noPadding;
+        border: 0;
+        background-color: $borderColor;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        margin: $noMargin;
+    }
+    &__input{
+        box-sizing: border-box;
+        background-color: $bgColor;
+        border: 0;
+        padding: 0 0 0 11px;
+        color: $borderColor;
+        font-weight: $regularFontWeight;
+        font-size: $placeholderFontSize;
+        line-height: $lineHeightEqualsFontSize;
+        &_name{
+            width: 100%;
+        }
+        
+        &__surname{
+            width: 100%;
+        }
+        
+        &_email{
+            width: 260px;
+        }
+    }
+    &__input:focus{
+        outline-style: none;
+        box-shadow: none;
+        border-color: transparent; 
+    }
+    &__input::placeholder{
+        font-weight: $regularFontWeight;
+        font-size: $placeholderFontSize;
+        line-height: $lineHeightEqualsFontSize;
+        color: $borderColor;
+    }
+    &__input:focus::placeholder{
+        color: transparent;
+    }
+    &__button{
+        width: 80px;
+        background-color: $borderColor;
+        border: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-weight: $regularFontWeight;
+        font-size: $subscribeBtnFontSize;
+        line-height: $lineHeightEqualsFontSize;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .subscribe{
+        margin-top: 60px;
+        width: 280px;
+        &__input{
+            &_email{
+                width: 200px;
+            }
+        }
+    }
+}

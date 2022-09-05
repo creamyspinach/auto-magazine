@@ -16,6 +16,8 @@ const pressParagraphSpan = press.querySelector('.paragraph__span');
 const pressLink = press.querySelector('.press__link');
 const pressFirstRadio = press.querySelector('#press__pseudo-radio-1');
 const pressSecondRadio = press.querySelector('#press__pseudo-radio-2');
+const subscribe = document.querySelector('.subscribe');
+const subscribeSubmitBtn = subscribe.querySelector('.subscribe__button');
 
 // анимация бургер-меню
 function headerBurgerChanges () {
@@ -47,6 +49,7 @@ const changeSlide = (direction) => {
     }
 }
 
+//изменение информации в секции пресса
 const changePressInfo = (radio) => {
     switch (radio) {
         case 'first': {
@@ -64,8 +67,16 @@ const changePressInfo = (radio) => {
     }
 }
 
+
+
 galleryBtnRight.addEventListener('click', () => changeSlide('right'));
 galleryBtnLeft.addEventListener('click', () => changeSlide('left'));
 
 pressFirstRadio.addEventListener('click', () => changePressInfo('first'));
 pressSecondRadio.addEventListener('click', () => changePressInfo('second'));
+
+//изменение value в кнопке в форме подписки
+subscribe.addEventListener('submit', function(evt){
+    evt.preventDefault();
+    subscribeSubmitBtn.value = 'ГОТОВО!';
+});
