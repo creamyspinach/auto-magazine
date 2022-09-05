@@ -8,117 +8,119 @@
     <title>AUTO-MAGAZINE</title>
 </head>
 <body class="page">
-    <header class="header">
-        <nav class="header__nav">
-            <a href="#" class="header__link">
-                ФАКТЫ
-            </a>
-            <a href="" class="header__link">
-                ГАЛЕРЕЯ
-            </a>
-            <a href="" class="header__link">
-                ПРЕССА
-            </a>
-        </nav>
-        <img class="logo logo_place_header" src="./images/logo.svg" alt="auto-magazine">
-        <div class="burger">
-            <span class="burger__line burger__line_top"></span>
-            <span class="burger__line burger__line_middle"></span>
-            <span class="burger__line burger__line_bottom"></span>
-        </div>
-    </header>
-    <main class="content">
-        <section class="heading">
-                <span class="heading__span heading__span_top">volkswagen T1</span>
-                <h1 class="heading__title">Новая версия популярного микроавтобуса</h1>
-                <span class="heading__span heading__span_bottom">с электро двигателем</span>
-                <a class="heading__button" href="#">подробнее</a>
-            <img class="heading__image" src="./images/heading__image.jpg" alt="фольксваген т1">
-        </section>
-        <section class="about">
-             <div class="about__container about__container_paragraph"> <!--модификаторы используются для грид областей на @media 1000px и для разных паддингов на @media 550px -->
-                <p class="paragraph paragraph_place_about">
-                    Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli: классический вэн T1 1966 года с электрической силовой
-                    установкой. По словам производителя, проект получит коммерческое продолжение, и через фирму-партнера eClassics наборы для 
-                    конверсии микроавтобусов в электрокары и уже готовые машины будут продавать частным клиентам.
-                </p>
+     <div class="page__container"> <!--обертка сделана для того, чтобы контент не растягивался больше 1440px на больших устройствах -->
+        <header class="header">
+            <nav class="header__nav">
+                <a href="#" class="header__link">
+                    ФАКТЫ
+                </a>
+                <a href="" class="header__link">
+                    ГАЛЕРЕЯ
+                </a>
+                <a href="" class="header__link">
+                    ПРЕССА
+                </a>
+            </nav>
+            <img class="logo logo_place_header" src="./images/logo.svg" alt="auto-magazine">
+            <div class="burger">
+                <span class="burger__line burger__line_top"></span>
+                <span class="burger__line burger__line_middle"></span>
+                <span class="burger__line burger__line_bottom"></span>
             </div>
-            <div class="about__container about__container_left-list">
-                <h3 class="about__list-title">плюсы</h3>
-                <ul class="about__list about__list_plus">
-                     <li class="about__list-item">&nbsp;экологичный</li> <!--посчитал логичным решением вместо отступа добавить пробел перед словом, тк в макете тоже используется проблел -->
-                    <li class="about__list-item">&nbsp;экономичный</li>
-                    <li class="about__list-item">&nbsp;тихий</li>
-                </ul>
-            </div>
-            <div class="about__container about__container_right-list">
-                <h3 class="about__list-title">минусы</h3>
-                <ul class="about__list about__list_minus">
-                    <li class="about__list-item">&nbsp;дорогой</li>
-                    <li class="about__list-item">&nbsp;подзарядка</li>
-                </ul>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="gallery__container">
-                <div class="gallery__slider-container">
-                    <div class="gallery__slider">
-                        <img class="gallery__img" src="./images/gallery__img-1.jpg" alt="фольксваген т1 на дороге">
-                        <img class="gallery__img" src="./images/gallery__img-2.jpg" alt="фольксваген т1 интерьер">
-                        <img class="gallery__img" src="./images/gallery__img-3.jpg" alt="фольксваген т1 интерьер">
+        </header>
+        <main class="content">
+            <section class="heading">
+                    <span class="heading__span heading__span_top">volkswagen T1</span>
+                    <h1 class="heading__title">Новая версия популярного микроавтобуса</h1>
+                    <span class="heading__span heading__span_bottom">с электро двигателем</span>
+                    <a class="heading__button" href="#">подробнее</a>
+                <img class="heading__image" src="./images/heading__image.jpg" alt="фольксваген т1">
+            </section>
+            <section class="about">
+                <div class="about__container about__container_paragraph"> <!--модификаторы используются для грид областей на @media 1000px и для разных паддингов на @media 550px -->
+                    <p class="paragraph paragraph_place_about">
+                        Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli: классический вэн T1 1966 года с электрической силовой
+                        установкой. По словам производителя, проект получит коммерческое продолжение, и через фирму-партнера eClassics наборы для 
+                        конверсии микроавтобусов в электрокары и уже готовые машины будут продавать частным клиентам.
+                    </p>
+                </div>
+                <div class="about__container about__container_left-list">
+                    <h3 class="about__list-title">плюсы</h3>
+                    <ul class="about__list about__list_plus">
+                        <li class="about__list-item">&nbsp;экологичный</li> <!--посчитал логичным решением вместо отступа добавить пробел перед словом, тк в макете тоже используется проблел -->
+                        <li class="about__list-item">&nbsp;экономичный</li>
+                        <li class="about__list-item">&nbsp;тихий</li>
+                    </ul>
+                </div>
+                <div class="about__container about__container_right-list">
+                    <h3 class="about__list-title">минусы</h3>
+                    <ul class="about__list about__list_minus">
+                        <li class="about__list-item">&nbsp;дорогой</li>
+                        <li class="about__list-item">&nbsp;подзарядка</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="gallery__container">
+                    <div class="gallery__slider-container">
+                        <div class="gallery__slider">
+                            <img class="gallery__img" src="./images/gallery__img-1.jpg" alt="фольксваген т1 на дороге">
+                            <img class="gallery__img" src="./images/gallery__img-2.jpg" alt="фольксваген т1 интерьер">
+                            <img class="gallery__img" src="./images/gallery__img-3.jpg" alt="фольксваген т1 интерьер">
+                        </div>
+                    </div>
+                    <h2 class="section-title section-title_place_gallery">Галерея</h2>
+                    <div class="gallery__controls">
+                        <button class="gallery__control gallery__control_left"></button>
+                        <button class="gallery__control gallery__control_right"></button>
                     </div>
                 </div>
-                <h2 class="section-title section-title_place_gallery">Галерея</h2>
-                <div class="gallery__controls">
-                    <button class="gallery__control gallery__control_left"></button>
-                    <button class="gallery__control gallery__control_right"></button>
+                <div class="gallery__container gallery__container_empty"></div>
+            </section>
+            <section class="press">
+                <div class="press__container press__container_title">
+                    <h2 class="section-title">Пресса</h2>
                 </div>
-            </div>
-            <div class="gallery__container gallery__container_empty"></div>
-        </section>
-        <section class="press">
-            <div class="press__container press__container_title">
-                <h2 class="section-title">Пресса</h2>
-            </div>
-            <div class="press__container press__container_paragraph">
-                <div class="press__paragraph-container">
-                    <span class="paragraph__span">Engadget:</span>
-                    <p class="paragraph paragraph_place_press">VW’s e-BULLI concept shows how your classic van can become an EV.</p>
+                <div class="press__container press__container_paragraph">
+                    <div class="press__paragraph-container">
+                        <span class="paragraph__span">Engadget:</span>
+                        <p class="paragraph paragraph_place_press">VW’s e-BULLI concept shows how your classic van can become an EV.</p>
+                    </div>
+                    <div class="press__radio-container">
+                        <label class="press__radio-label" for="radio-1">
+                            <input type="radio" name="press-radio" class="press__radio" checked id="radio-1">
+                            <span class="press__pseudo-radio" id="press__pseudo-radio-1"></span>
+                        </label>
+                        <label class="press__radio-label" for="radio-2">
+                            <input type="radio" name="press-radio" class="press__radio" id="radio-2">
+                            <span class="press__pseudo-radio" id="press__pseudo-radio-2"></span>
+                        </label>
+                    </div>
+                    <a class="press__link" href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html" target="_blank">Читать</a>
                 </div>
-                <div class="press__radio-container">
-                    <label class="press__radio-label" for="radio-1">
-                        <input type="radio" name="press-radio" class="press__radio" checked id="radio-1">
-                        <span class="press__pseudo-radio" id="press__pseudo-radio-1"></span>
-                    </label>
-                    <label class="press__radio-label" for="radio-2">
-                        <input type="radio" name="press-radio" class="press__radio" id="radio-2">
-                        <span class="press__pseudo-radio" id="press__pseudo-radio-2"></span>
-                    </label>
-                </div>
-                <a class="press__link" href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html" target="_blank">Читать</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container footer__container_subscription">
+                <h2 class="section-title">Подписка</h2>
+                <p class="footer__subtitle">На новые спецвыпуски машин.</p>
+                <form class="subscribe">
+                    <fieldset class="subscribe__container">
+                        <input placeholder="ИМЯ" required class="subscribe__input subscribe__input_name" type="text" autofocus>
+                        <input placeholder="ФАМИЛИЯ" required class="subscribe__input subscribe__input_surname" type="text">
+                    </fieldset>
+                    <fieldset class="subscribe__container">
+                        <input placeholder="ПОЧТА" required class="subscribe__input subscribe__input_email" type="email">
+                        <input type="submit" class="subscribe__button" value="ПОДПИСКА">
+                    </fieldset>
+                </form>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__container footer__container_subscription">
-            <h2 class="section-title">Подписка</h2>
-            <p class="footer__subtitle">На новые спецвыпуски машин.</p>
-            <form class="subscribe">
-                <fieldset class="subscribe__container">
-                    <input placeholder="ИМЯ" required class="subscribe__input subscribe__input_name" type="text" autofocus>
-                    <input placeholder="ФАМИЛИЯ" required class="subscribe__input subscribe__input_surname" type="text">
-                </fieldset>
-                <fieldset class="subscribe__container">
-                    <input placeholder="ПОЧТА" required class="subscribe__input subscribe__input_email" type="email">
-                    <input type="submit" class="subscribe__button" value="ПОДПИСКА">
-                </fieldset>
-            </form>
-        </div>
-        <div class="footer__container footer__container_copyright">
-            <img class="logo logo_place_footer" src="./images/logo.svg" alt="auto-magazine">
-            <span class="footer__copyright">© Auto-Magazine 2021</span>
-        </div>
-    </footer>
+            <div class="footer__container footer__container_copyright">
+                <img class="logo logo_place_footer" src="./images/logo.svg" alt="auto-magazine">
+                <span class="footer__copyright">© Auto-Magazine 2021</span>
+            </div>
+        </footer>
+    </div>
 </body>
 <script src="./scripts/index.js"></script>
 </html>

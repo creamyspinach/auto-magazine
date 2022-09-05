@@ -3,6 +3,12 @@
 @import url(../modules/keyframes/keyframes.css);
 .page {
   font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #191D2C;
+}
+.page__container {
+  max-width: 1440px;
 }
 
 .content {
@@ -15,6 +21,7 @@
 
 .header {
   width: 100%;
+  max-width: 1440px;
   height: 70px;
   background-color: #191D2C;
   position: fixed;
@@ -73,6 +80,7 @@
 .logo_disabled {
   display: none;
 }
+
 @media screen and (max-width: 1000px) {
   .logo_place_header {
     margin-right: auto;
