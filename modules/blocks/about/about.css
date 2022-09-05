@@ -1,8 +1,0 @@
-.about {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 1px;
-}
-.about__container {
-  padding: 40px 50px 45px;
-}/*# sourceMappingURL=about.css.map */
