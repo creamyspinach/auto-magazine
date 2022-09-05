@@ -45,6 +45,7 @@
   font-size: 12px;
   line-height: 16px;
   transition: all 200ms ease;
+  letter-spacing: 1px;
 }
 .header__link:hover {
   opacity: 0.6;
@@ -145,6 +146,7 @@
   transition: all 300ms ease;
   margin-top: 30px;
   justify-self: center;
+  letter-spacing: 1px;
 }
 .heading__button:hover {
   background-color: #E1FD2C;
@@ -274,6 +276,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 37px;
+  letter-spacing: 2px;
 }
 .about__list {
   text-transform: capitalize;
@@ -592,6 +595,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 100%;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 1000px) {

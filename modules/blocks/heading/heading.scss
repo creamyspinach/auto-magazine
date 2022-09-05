@@ -49,6 +49,7 @@
         transition: all 300ms ease;
         margin-top: 30px;
         justify-self: center;
+        letter-spacing: 1px;
     }
     &__button:hover{
         background-color: $borderColor;
