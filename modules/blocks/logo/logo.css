@@ -10,6 +10,7 @@
 .logo_disabled {
   display: none;
 }
+
 @media screen and (max-width: 1000px) {
   .logo_place_header {
     margin-right: auto;
