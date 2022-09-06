@@ -10,6 +10,14 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .logo{
+        &_place_header{
+            margin-right: 628px;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .logo{
         &_place_header{
@@ -27,7 +35,7 @@
         }
         &_place_footer{
             width: 100%;
-            margin-top: 100px;
+            margin-top: 80px;
         }
     }
 }

@@ -5,27 +5,29 @@
     margin-top: 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "span-top image"
-    "title image"
-    "span-bottom image"
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas:
+    "container image"
     "button image";
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: container;
+        margin-top: 30px;
+        max-height: 356px;
+    }
     &__span{
         font-weight: 400;
         font-size: 19px;
         line-height: 28px;
-        margin-bottom: 30px;
         justify-self: center;
         text-transform: uppercase;
     }
     &__span_top{
-        grid-area: span-top;
-    }
-    &__span_bottom{
-        grid-area: span-bottom;
+        margin-bottom: 30px;
     }
     &__title{
-        grid-area: title;
         font-weight: 400;
         font-size: 65px;
         line-height: 73px;
@@ -43,12 +45,13 @@
         box-sizing: border-box;
         border: 1px solid $borderColor;
         text-decoration: none;
-        font-weight: 400;
+        font-weight: $regularFontWeight;
         font-size: 15px;
         color: $borderColor;
         transition: all 300ms ease;
-        margin-top: 30px;
+        margin-bottom: 30px;
         justify-self: center;
+        align-self: end;
         letter-spacing: 1px;
     }
     &__button:hover{
@@ -56,9 +59,11 @@
         color: $bgColor;
     }
     &__image{
+        object-fit: cover;
         grid-area: image;
-        width: 50vw;
+        width: 100%;
         align-self: center;
+        aspect-ratio: 70 / 51;
     }
 }
 
@@ -66,20 +71,24 @@
     .heading{
         padding: 100px 34px;
         grid-template-columns: auto;
-        grid-template-rows: repeat(5, min-content);
+        grid-template-rows: repeat(3, min-content);
         grid-template-areas: 
-        "span-top"
-        "title"
-        "span-bottom"
+        "container"
         "image"
         "button";
+        &__container{
+            grid-area: container;
+            margin-top: 0;
+        }
+        &__button{
+            margin-bottom: 0;
+        }
         &__title{
             max-width: 550px;
             margin: 0 auto 50px auto;
         }
         &__image{
-            width: 100%;
-            margin: 70px 0; 
+            margin: 100px 0;
         }
     }
 }

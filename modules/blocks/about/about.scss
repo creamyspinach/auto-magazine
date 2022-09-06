@@ -30,11 +30,17 @@
             list-style-type: "-";
         }
     }
+    &__list-item{
+        margin-bottom: 2px;
+    }
+    &__list-item:last-of-type{
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .about{
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: min-content 506px;
         grid-template-areas: 
         "paragraph paragraph"
@@ -60,6 +66,7 @@
         "paragraph"
         "left-list"
         "right-list";
+        grid-template-columns: auto;
         grid-template-rows: repeat(3, min-content);
         &__container{
             padding: $aboutContainerPaddingM;
@@ -76,6 +83,9 @@
             padding: 0 0 0 8px;
             font-size: $aboutListFontSizeM;
             line-height: $aboutListLineHeightM;
+        }
+        &__list-item{
+            margin-bottom: 6px;
         }
     }
 }

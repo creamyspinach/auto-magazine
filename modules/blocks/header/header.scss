@@ -1,7 +1,6 @@
 .header{
     width: 100%;
     max-width: 1440px;
-    height: 70px;
     background-color: $bgColor;
     position: fixed;
     display: flex;
@@ -9,6 +8,8 @@
     box-sizing: border-box;
     border-bottom: $mainGap solid $borderColor;
     z-index: 1;
+    min-height: 70px;
+    margin: auto 0;
     &__nav{
         margin-left: 50px;
         display: flex;
@@ -42,7 +43,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .header{
         &__nav{
             margin-left: 20px;

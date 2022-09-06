@@ -28,6 +28,8 @@
     }
     &__img{
         width: 100%;
+        object-fit: cover;
+        aspect-ratio: 70 / 51;
     }
     &__controls{
         width: 114px;
@@ -66,7 +68,10 @@
         }
         &__slider-container{
             margin: 35px auto $commonMarginOrPaddingDT;
-            max-width: 720px;
+            max-width: 700px;
+        }
+        &__img{
+            max-height: 510px;
         }
     }
 }
