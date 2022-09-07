@@ -147,12 +147,13 @@
   align-items: center;
   justify-content: center;
   width: 360px;
-  height: 64px;
   box-sizing: border-box;
   border: 1px solid #E1FD2C;
   text-decoration: none;
   font-weight: 400;
   font-size: 15px;
+  line-height: 60px;
+  padding: 1px 0;
   color: #E1FD2C;
   transition: all 300ms ease;
   margin-bottom: 30px;
@@ -321,6 +322,18 @@
 .about__list-item:last-of-type {
   margin-bottom: 0;
 }
+.about__paragraph {
+  color: #E1FD2C;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  display: inline;
+}
+.about__paragraph::before {
+  font-weight: 400;
+  content: "VW T1 Electro:";
+}
 
 @media screen and (max-width: 1000px) {
   .about {
@@ -378,20 +391,9 @@
   font-weight: 400;
   content: "VW T1 Electro:";
 }
-.paragraph__span {
-  font-size: 30px;
-  line-height: 42px;
-  margin: 0;
-  display: inline;
-  font-weight: 400;
-}
 
 @media screen and (max-width: 550px) {
   .paragraph {
-    font-size: 16px;
-    line-height: 27px;
-  }
-  .paragraph__span {
     font-size: 16px;
     line-height: 27px;
   }
@@ -566,7 +568,7 @@
   justify-self: flex-end;
   align-self: flex-end;
   width: 110px;
-  height: 52px;
+  min-height: 52px;
   background-image: url(../../../images/press__link-ellipse.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -583,6 +585,21 @@
 .press__link:hover {
   background-image: url(../../../images/press__link-ellipse-hover.svg);
   color: #191D2C;
+}
+.press__span {
+  color: #E1FD2C;
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  display: inline;
+  font-weight: 400;
+}
+.press__paragraph {
+  color: #E1FD2C;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -605,9 +622,17 @@
   }
   .press__link {
     width: 88px;
-    height: 42px;
+    min-height: 42px;
     background-size: 88px;
     font-size: 14px;
+  }
+  .press__span {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .press__paragraph {
+    font-size: 16px;
+    line-height: 27px;
   }
 }
 .footer {
