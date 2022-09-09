@@ -39,6 +39,15 @@
     &__list-item:last-of-type{
         margin-bottom: 0;
     }
+    &__span{
+        padding-right: 2px;
+        color: $borderColor;
+        font-size: $paragraphFontSizeDT;
+        line-height: $paragraphLineHeightDT;
+        margin: $noMargin;
+        display: inline;
+        font-weight: $regularFontWeight;
+    }
     &__paragraph{
         color: $borderColor;
         font-weight: $lightFontWeight;
@@ -47,11 +56,6 @@
         margin: $noMargin;
         display: inline;
     }
-    &__paragraph::before{
-            font-weight: $regularFontWeight;
-            content: "VW T1 Electro:";
-    }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -110,6 +114,11 @@
         &__list-item{
             padding-left: 3px;
             margin-bottom: 6px;
+        }
+        &__span{
+            padding-right: 1px;
+            font-size: $paragraphFontSizeM;
+            line-height: $paragraphLineHeightM;
         }
         &__paragraph{
             font-size: $paragraphFontSizeM;

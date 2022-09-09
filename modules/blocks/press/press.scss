@@ -72,6 +72,7 @@
         color: $bgColor;
     }
     &__span{
+        padding-right: 2px;
         color: $borderColor;
         font-size: $paragraphFontSizeDT;
         line-height: $paragraphLineHeightDT;
@@ -112,6 +113,7 @@
             font-size: $pressLinkFontSizeM;
         }
         &__span{
+            padding-right: 1px;
             font-size: $paragraphFontSizeM;
             line-height: $paragraphLineHeightM;
         }
