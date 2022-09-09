@@ -64,7 +64,7 @@
         grid-area: image;
         width: 100%;
         align-self: center;
-        aspect-ratio: 70 / 51;
+        aspect-ratio: 72 / 54;
     }
 }
 
@@ -90,6 +90,7 @@
         }
         &__image{
             margin: 100px 0;
+            aspect-ratio: 70/51;
         }
     }
 }

@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: $mainGap;
+    min-height: 505px; // видимо из за немного разных шрифтов, в макете помещается на одну строку больше в элемент paragraph. добавил для пиксельперфекта, на след media убираю
     &__container{
         padding: $aboutContainerPaddingDT;
         background-color: $bgColor;
@@ -19,18 +20,20 @@
         text-transform: capitalize;
         box-sizing: border-box;
         margin: 50px auto auto 0;
-        padding: 0 0 0 10px;
         font-weight: $lightFontWeight;
         font-size: $aboutLsistFontSizeDT;
         line-height: $aboutListLineHeightDT;
         &_plus{
             list-style-type: "+";
+            padding-left: 10px;
         }
         &_minus{
             list-style-type: "-";
+            padding-left: 6px;
         }
     }
     &__list-item{
+        padding-left: 7px;
         margin-bottom: 2px;
     }
     &__list-item:last-of-type{
@@ -48,6 +51,7 @@
             font-weight: $regularFontWeight;
             content: "VW T1 Electro:";
     }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -57,6 +61,7 @@
         grid-template-areas: 
         "paragraph paragraph"
         "left-list right-list";
+        min-height: auto;
         &__container{
             &_paragraph{
                 grid-area: paragraph;

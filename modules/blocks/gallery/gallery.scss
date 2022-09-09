@@ -29,7 +29,7 @@
     &__img{
         width: 100%;
         object-fit: cover;
-        aspect-ratio: 70 / 51;
+        aspect-ratio: 72 / 54;
     }
     &__controls{
         width: 114px;
@@ -72,6 +72,7 @@
         }
         &__img{
             max-height: 510px;
+            aspect-ratio: 70 / 51;
         }
     }
 }
