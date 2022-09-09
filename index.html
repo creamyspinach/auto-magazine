@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <title>AUTO-MAGAZINE</title>
   </head>
+  <!-- сделал вроде все пункты, кроме "Можно сделать обертки внутри секций, 
+  для того чтобы горизонтальные линии уходили от края в край экрана."
+  не до конца разобрался, как сделать такую обертку, чтобы она была 
+  не снаружи и не портила все позиционирование или структуру файлов -->
   <body class="page">
     <div class="page__container">
-      <!--обертка сделана для того, чтобы контент не растягивался больше 1440px на больших устройствах -->
       <header class="header">
         <nav class="header__nav">
           <a href="#about" class="header__link"> ФАКТЫ </a>
@@ -47,8 +50,8 @@
         </section>
         <section class="about">
           <div class="about__container about__container_paragraph">
-            <a class="anchor anchor_place_about" id="about"></a
-            ><!-- такие якоря сделал, потому что хедер закрывал верхнюю часть собой -->
+            <a class="anchor anchor_place_about" id="about"></a>
+            <!-- такие якоря сделал, потому что хедер закрывал верхнюю часть собой -->
             <span class="about__span">VW T1 Electro:</span>
             <p class="about__paragraph">
               Отделение Volkswagen Commercial Vehicles представило концепт
@@ -117,10 +120,9 @@
           </div>
           <div class="press__container press__container_paragraph">
             <div class="press__paragraph-container">
-              <span class="press__span"
-                ><a class="anchor anchor_place_press" id="press"></a>
-                Engadget:</span
-              >
+              <span class="press__span">
+                <a class="anchor anchor_place_press" id="press"></a>
+                Engadget:</span>
               <p class="press__paragraph">
                 VW’s e-BULLI concept shows how your classic van can become an
                 EV.
