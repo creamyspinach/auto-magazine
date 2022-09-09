@@ -504,7 +504,7 @@
   width: 42px;
   height: 34px;
   cursor: pointer;
-  background-image: url(../../../images/slider__arrow.svg);
+  background-image: url(../images/gallery__control.svg);
   background-size: 42px 34px;
   background-repeat: no-repeat;
   background-position: center;
@@ -782,7 +782,7 @@
 .subscribe__input_name {
   width: 100%;
 }
-.subscribe__input__surname {
+.subscribe__input_surname {
   width: 100%;
 }
 .subscribe__input_email {
