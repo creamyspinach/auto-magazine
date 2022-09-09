@@ -1,0 +1,18 @@
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url(./fonts/SourceSansPro/SourceSansPro-Light.eot) format('embedded-opentype'),
+		 url(./fonts/SourceSansPro/SourceSansPro-Light.ttf) format('truetype'),
+		 url(./fonts/SourceSansPro/SourceSansPro-Light.woff) format('woff');
+	font-weight: 300;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url(./fonts/SourceSansPro/SourceSansPro-Regular.eot) format('embedded-opentype'),
+		 url(./fonts/SourceSansPro/SourceSansPro-Regular.ttf) format('truetype'),
+		 url(./fonts/SourceSansPro/SourceSansPro-Regular.woff) format('woff');
+	font-weight: 400;
+	font-style: normal; 
+}
