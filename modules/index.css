@@ -313,7 +313,7 @@
 }
 .about__list_plus {
   list-style-type: "+";
-  padding-left: 10px;
+  padding-left: 11px;
 }
 .about__list_minus {
   list-style-type: "-";
@@ -380,7 +380,14 @@
     font-size: 16px;
     line-height: 20px;
   }
+  .about__list_plus {
+    padding-left: 8px;
+  }
+  .about__list_minus {
+    padding-left: 4px;
+  }
   .about__list-item {
+    padding-left: 3px;
     margin-bottom: 6px;
   }
   .about__paragraph {

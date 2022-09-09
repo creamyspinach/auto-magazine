@@ -25,11 +25,11 @@
         line-height: $aboutListLineHeightDT;
         &_plus{
             list-style-type: "+";
-            padding-left: 10px;
+            padding-left: 11px;
         }
         &_minus{
             list-style-type: "-";
-            padding-left: 6px;
+            padding-left: 6px; // разные паддинги, потому что + и - разные по размерам видимо
         }
     }
     &__list-item{
@@ -100,8 +100,15 @@
             padding: 0 0 0 8px;
             font-size: $aboutListFontSizeM;
             line-height: $aboutListLineHeightM;
+            &_plus{
+                padding-left: 8px;
+            }
+            &_minus{
+                padding-left: 4px;
+            }
         }
         &__list-item{
+            padding-left: 3px;
             margin-bottom: 6px;
         }
         &__paragraph{
