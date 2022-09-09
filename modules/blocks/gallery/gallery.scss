@@ -32,18 +32,21 @@
         aspect-ratio: 72 / 54;
     }
     &__controls{
-        width: 114px;
+        align-self: end;
+        width: 115px;
         display: flex;
         justify-content: space-between;
         grid-area: controls;
         justify-self: end;
-        margin-right: $commonMarginOrPaddingDT;
+        margin-right: $commonMarginOrPaddingDT - 1px;
+        margin-bottom: 4px;
     }
     &__control{
         width: 42px;
         height: 34px;
         cursor: pointer;
         background-image: url(../../../images/slider__arrow.svg);
+        background-size: 42px 34px;
         background-repeat: no-repeat;
         background-position: center;
         background-color: inherit;
@@ -89,13 +92,14 @@
             padding: $noPadding;
         }
         &__controls{
-            margin: $noMargin;
+            margin-right: 0;
+            margin-bottom: 3px;
             width: 64px;
         }
         &__control{
             width: 24px;
             height: 20px;
-            background-size: 24px;
+            background-size: 25px;
         }
     }
 }
