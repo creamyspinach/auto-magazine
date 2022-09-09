@@ -166,9 +166,10 @@
         <div class="footer__container footer__container_subscription">
           <h2 class="section-title">Подписка</h2>
           <p class="footer__subtitle">На новые спецвыпуски машин.</p>
-          <form class="subscribe">
+          <form class="subscribe" name="subscribe">
             <fieldset class="subscribe__container">
               <input
+                name="name" 
                 placeholder="ИМЯ"
                 required
                 class="subscribe__input subscribe__input_name"
@@ -177,6 +178,7 @@
               />
               <input
                 placeholder="ФАМИЛИЯ"
+                name="surname"
                 required
                 class="subscribe__input subscribe__input_surname"
                 type="text"
@@ -185,11 +187,12 @@
             <fieldset class="subscribe__container">
               <input
                 placeholder="ПОЧТА"
+                name="email"
                 required
                 class="subscribe__input subscribe__input_email"
                 type="email"
               />
-              <input type="submit" class="subscribe__button" value="ПОДПИСКА" />
+              <input type="submit" name="submit" class="subscribe__button" value="ПОДПИСКА" />
             </fieldset>
           </form>
         </div>
