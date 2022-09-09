@@ -54,7 +54,9 @@
         align-self: flex-end;
         width: 110px;
         min-height: 52px;
-        background-image: url(../../../images/press__link-ellipse.svg);//пока не хватило знаний, как сделать границу такой формы(
+        border-radius: 59%;
+        border: 1px solid $borderColor;
+        box-sizing: border-box;
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
@@ -68,7 +70,7 @@
         line-height: $lineHeightEqualsFontSize;
     }
     &__link:hover{
-        background-image: url(../../../images/press__link-ellipse-hover.svg);
+        background-color: $borderColor;
         color: $bgColor;
     }
     &__span{
@@ -109,7 +111,6 @@
         &__link{
             width: 88px;
             min-height: 42px;
-            background-size: 88px;
             font-size: $pressLinkFontSizeM;
         }
         &__span{

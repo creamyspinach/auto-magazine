@@ -1,6 +1,37 @@
-@import url(../vendor/fonts/SourceSansPro/SourceSansPro.css);
+@import url(../vendor/fonts.css);
 @import url(../vendor/normalize.css);
-@import url(../modules/keyframes/keyframes.css);
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .page {
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
@@ -320,7 +351,7 @@
   padding-left: 6px;
 }
 .about__list-item {
-  padding-left: 7px;
+  padding-left: 6px;
   margin-bottom: 2px;
 }
 .about__list-item:last-of-type {
@@ -577,7 +608,9 @@
   align-self: flex-end;
   width: 110px;
   min-height: 52px;
-  background-image: url(../../../images/press__link-ellipse.svg);
+  border-radius: 59%;
+  border: 1px solid #E1FD2C;
+  box-sizing: border-box;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -591,7 +624,7 @@
   line-height: 100%;
 }
 .press__link:hover {
-  background-image: url(../../../images/press__link-ellipse-hover.svg);
+  background-color: #E1FD2C;
   color: #191D2C;
 }
 .press__span {
@@ -633,7 +666,6 @@
   .press__link {
     width: 88px;
     min-height: 42px;
-    background-size: 88px;
     font-size: 14px;
   }
   .press__span {
