@@ -11,13 +11,13 @@
      <div class="page__container"> <!--обертка сделана для того, чтобы контент не растягивался больше 1440px на больших устройствах -->
         <header class="header">
             <nav class="header__nav">
-                <a href="#" class="header__link">
+                <a href="#about" class="header__link">
                     ФАКТЫ
                 </a>
-                <a href="" class="header__link">
+                <a href="#gallery" class="header__link">
                     ГАЛЕРЕЯ
                 </a>
-                <a href="" class="header__link">
+                <a href="#press" class="header__link">
                     ПРЕССА
                 </a>
             </nav>
@@ -39,7 +39,8 @@
                 <img class="heading__image" src="./images/heading__image.jpg" alt="фольксваген т1">
             </section>
             <section class="about">
-                <div class="about__container about__container_paragraph"> <!--модификаторы используются для грид областей на @media 1000px и для разных паддингов на @media 550px -->
+                <div class="about__container about__container_paragraph"> 
+                    <a class="anchor anchor_place_about" id="about"></a><!-- такие якоря сделал, потому что хедер закрывал верхнюю часть собой -->
                     <p class="about__paragraph">
                         Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli: классический вэн T1 1966 года с электрической силовой
                         установкой. По словам производителя, проект получит коммерческое продолжение, и через фирму-партнера eClassics наборы для 
@@ -65,6 +66,7 @@
             <section class="gallery">
                 <div class="gallery__container">
                     <div class="gallery__slider-container">
+                        <a class="anchor anchor_place_gallery" id="gallery"></a>
                         <div class="gallery__slider">
                             <img class="gallery__img" src="./images/gallery__img-1.jpg" alt="фольксваген т1 на дороге">
                             <img class="gallery__img" src="./images/gallery__img-2.jpg" alt="фольксваген т1 интерьер">
@@ -85,7 +87,7 @@
                 </div>
                 <div class="press__container press__container_paragraph">
                     <div class="press__paragraph-container">
-                        <span class="press__span">Engadget:</span>
+                        <span class="press__span"><a class="anchor anchor_place_press" id="press"></a> Engadget:</span>
                         <p class="press__paragraph">VW’s e-BULLI concept shows how your classic van can become an EV.</p>
                     </div>
                     <div class="press__radio-container">

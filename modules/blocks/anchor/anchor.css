@@ -1,0 +1,39 @@
+.anchor {
+  display: block;
+  content: "";
+  visibility: hidden;
+  position: absolute;
+}
+.anchor_place_about {
+  margin-top: -110px;
+  height: 110px;
+}
+.anchor_place_gallery {
+  margin-top: -70px;
+  height: 70px;
+}
+.anchor_place_press {
+  margin-top: -120px;
+  height: 120px;
+}
+
+@media screen and (max-width: 1000px) {
+  .anchor_place_gallery {
+    margin-top: -105px;
+    height: 105px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .anchor_place_about {
+    margin-top: -88px;
+    height: 88px;
+  }
+  .anchor_place_gallery {
+    margin-top: -90px;
+    height: 90px;
+  }
+  .anchor_place_press {
+    margin-top: -90px;
+    height: 90px;
+  }
+}/*# sourceMappingURL=anchor.css.map */

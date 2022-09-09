@@ -99,9 +99,9 @@
         &__list-item{
             margin-bottom: 6px;
         }
-    }
-    &__paragraph{
-        font-size: $paragraphFontSizeM;
-        line-height: $paragraphLineHeightM;
+        &__paragraph{
+            font-size: $paragraphFontSizeM;
+            line-height: $paragraphLineHeightM;
+        }
     }
 }
