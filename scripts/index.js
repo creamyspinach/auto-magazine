@@ -53,15 +53,15 @@ const changeSlide = (direction) => {
 const changePressInfo = (radio) => {
     switch (radio) {
         case 'first': {
-            pressParagraphSpan.textContent = `Engadget:`
-            pressParagraph.textContent = `VW’s e-BULLI concept shows how your classic van can become an EV.`;
-            pressLink.href = 'https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html';
+            pressParagraphSpan.textContent = `Top Gear:`
+            pressParagraph.textContent = `The VW e-BULLI Concept is an incredible retro EV van`;
+            pressLink.href = 'https://www.topgear.com/car-news/electric/vw-e-bulli-concept-incredible-retro-ev-van';
             break;
         }
         case 'second': {
-            pressParagraphSpan.textContent = `Drive.ru:`;
-            pressParagraph.textContent = `Вэн Volkswagen e-Bulli скрестил классику с современной техникой.`;
-            pressLink.href = 'https://www.drive.ru/news/volkswagen/5e7447bdec05c4b251000010.html';
+            pressParagraphSpan.textContent = `NAPLETON NEWS:`;
+            pressParagraph.textContent = `A HIGH-TECH CLASSIC VOLKSWAGEN`;
+            pressLink.href = 'https://www.napleton.news/volkswagen/the-volkswagen-e-bulli-concept/';
             break;
         }
     }
